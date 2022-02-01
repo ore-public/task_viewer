@@ -16,6 +16,5 @@ test:
   database: task_viewer_test
   port: <%= ENV["DATABASE_PORT"] %>
 
-production:
-  <<: *default
-  database: task_viewer_production
+ production:
+   url: <%%= ENV['JAWSDB_URL'] %>
