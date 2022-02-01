@@ -17,4 +17,4 @@ test:
   port: <%= ENV["DATABASE_PORT"] %>
 
  production:
-   url: <%%= ENV['JAWSDB_URL'] %>
+   url: <%= ENV['JAWSDB_URL'] %>
