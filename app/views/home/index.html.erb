@@ -1,2 +1,9 @@
-<h1>タスクビューワー</h1>
-<p>タスク一覧確認ツール</p>
+<h1>タスクビューワ</h1>
+
+<% if current_user %>
+  <%= image_tag current_user.image %>
+  <%= current_user.name %>さん
+  <%= link_to "ログアウト", log_out_path %>
+<% else %>
+  <%= link_to "Googleでログイン", "/auth/google_oauth2", method: :post %>
+<% end %>
