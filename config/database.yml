@@ -17,4 +17,6 @@ test:
   port: <%= ENV["DATABASE_PORT"] %>
 
 production:
+  adapter: mysql2
+  encoding: utf8mb4
   url: <%= ENV['JAWSDB_URL'] %>
